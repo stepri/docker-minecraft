@@ -10,9 +10,9 @@ For more information on Minecraft and check out it's [website][1].
 Running this will build you a docker image with the latest version of both
 docker-minecraft and Minecraft itself.
 
-    git clone https://github.com/overshard/docker-minecraft
+    git clone https://github.com/stepri/docker-minecraft
     cd docker-minecraft
-    sudo docker build -t overshard/minecraft .
+    sudo docker build -t stepri/minecraft .
 
 
 ## Running docker-minecraft
@@ -31,7 +31,7 @@ already created before running `mkdir -p /mnt/minecraft`.
 From now on when you start/stop docker-minecraft you should use the container id
 with the following commands. To get your container id, after you initial run
 type `sudo docker ps` and it will show up on the left side followed by the
-image name which is `overshard/minecraft:latest`.
+image name which is `stepri/minecraft:latest`.
 
     sudo docker start <container_id>
     sudo docker stop <container_id>
