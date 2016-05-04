@@ -26,7 +26,7 @@ same port as well.
 Also be sure your mounted directory on your host machine is
 already created before running `mkdir -p /mnt/minecraft`.
 
-    sudo docker run -m 512M --memory-swap -1 --restart="always" -d=true -p=25565:25565 -v=/var/docker/minecraft:/data stepri/minecraft /start
+    sudo docker run --restart="always" -d=true -p=25565:25565 -v=/var/docker/minecraft:/data stepri/minecraft /start
 
 
 
